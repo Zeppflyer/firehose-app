@@ -1,13 +1,19 @@
-<h2>
+<div class="stolen_frosty span7 text-center offset4">
+
+<h1 class="stolen-h1">
+	Upload your Lessons
+</h1>
 	
 	<%= simple_form_for @pic do |f| %>
 
 		<%= f.input :lesson %>
-		<%= f.input :emotion %>
-		<%= f.input :lesson %>
-
-		<%= submit_tag "Enter Data" %>
+		<%= f.input :emotion, label: 'How did you feel?', placeholder: 'Stoned, Jazzed, Super, etc'%>
+		<%= f.input :learned, label: 'What did you learn?' , placeholder: 'Ruby'%>
+		
+		<%= submit_tag 'Enter Data', :class =>'btn btn-success btn-large' %> 
 
 	<% end %>
 
-</h2>
+
+
+</div>
